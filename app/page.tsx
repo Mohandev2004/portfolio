@@ -1,8 +1,7 @@
 import React from "react";
-import  Projects  from "../components/Projects";
-import Blogs from "../components/Blogs";
-import Footer from "../components/Footer";
-import  Main  from "../components/Main";
+import  Projects  from "../components/HomePage/Projects";
+import Blogs from "../components/HomePage/Blogs";
+import  Main  from "../components/HomePage/About";
 
 
 export default function Home() {
@@ -10,7 +9,6 @@ export default function Home() {
     <Main/>
     <Projects/>
     <Blogs/>
-    <Footer />
     </>
   );
 }

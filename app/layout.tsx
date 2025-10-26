@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "../components/navbar/page";
+import { Navbar } from "../components/Nav";
+import Footer from "@/components/Footer";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,10 +24,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased bg-neutral-100 dark:bg-neutral-700`}
+        className={`${inter.className} antialiased bg-black`}
       >
+        <Toaster
+  richColors
+  toastOptions={{
+    style: {
+      background: "#1a1a1a",
+      color: "#e4dedef0",
+      border: "1px solid #333",
+    },
+  }}
+/>
+
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main>{children}</main>
+        <Footer/>
       </body>
     </html>
   );

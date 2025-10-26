@@ -1,9 +1,8 @@
-import Contact from "@/components/contact";
+import Contact from "@/components/HomePage/contact"
 export default function ProjectsPage() {
     return (
         <>   
         <Contact/>
-        
         </>
     );
 }

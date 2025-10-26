@@ -2,7 +2,11 @@
 import React, { useState } from "react";
 import { toast } from "sonner";
 import { Info, Loader2 } from "lucide-react";
-import Footer from "@/components/Footer";
+import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiPeerlist } from "react-icons/si";
+import { Container } from "../container";
 
 export default function ConatctPage() {
   const [form, setForm] = useState({
@@ -76,16 +80,15 @@ export default function ConatctPage() {
     }
   };
   return (
-    <div className="">
-      <div className="h-full overflow-x-hidden overflow-y-scroll scroll-smooth">
-        <div className="w-full h-fit pt-6">
-          
-        </div>
-        <div className=" w-full h-8 
-         ">
-          <div className="w-3xl px-4 mx-auto flex items-center h-full  
-            ">
-            <h1 className="text-4xl leading-0 tracking-tight font-semibold flex justify-center items-center gap-2 ">
+
+
+      <div className=" overflow-x-hidden overflow-y-auto scroll-smooth hide-scrollbar py-10">
+        <div className="w-full pt-6"></div>
+
+        <div className="w-full h-fit">
+          <div className="w-4xl px-4 mx-auto ">
+            {/* Heading */}
+            <h1 className="text-4xl leading-0 tracking-tight font-semibold">
               Contact Me
             </h1>
           </div>
@@ -94,14 +97,11 @@ export default function ConatctPage() {
           <div className="md:w-3xl h-full mx-auto">
             <form
               onSubmit={handleSubmit}
-              className="md:w-3xl mx-auto  
-               "
-            >
+              className="md:w-3xl mx-auto">
               <div className=" flex justify-center items-center py-6">
-                <div className="h-full w-6  
-                 " />
+                <div className="h-full w-6" />
 
-                <div className="md:w-1/2 w-full px-4 space-y-4">
+                <div className="md:w-1/2 w-full px-4 py-4 space-y-3">
                   <div>
                     <label className="block text-sm font-medium mb-1">
                       Full Name
@@ -112,7 +112,7 @@ export default function ConatctPage() {
                       value={form.fullName}
                       disabled={isLoading}
                       onChange={handleChange}
-                      className="w-full rounded-md border px-3 py-2 bg-neutral-50 bg-neutral-900 "
+                      className="w-full rounded-md border-zinc-500 px-3 py-2 bg-neutral-50 bg-neutral-900 "
                       placeholder="John"
                     />
                   </div>
@@ -127,7 +127,7 @@ export default function ConatctPage() {
                       value={form.email}
                       disabled={isLoading}
                       onChange={handleChange}
-                      className="w-full rounded-md border px-3 py-2 bg-neutral-50 bg-neutral-900 "
+                      className="w-full rounded-md border-zinc-500 px-3 py-2 bg-neutral-50 bg-neutral-900 "
                       placeholder="john@example.com"
                     />
                   </div>
@@ -143,8 +143,8 @@ export default function ConatctPage() {
                   value={form.message}
                   disabled={isLoading}
                   onChange={handleChange}
-                  rows={10}
-                  className="w-full rounded-md border px-3 py-2 bg-neutral-50 bg-neutral-900 "
+                  rows={5}
+                  className="w-full rounded-md border-zinc-500 px-3 py-2 bg-neutral-50 bg-neutral-900 "
                   placeholder="What do you want to ask..?"
                 />
               </div>
@@ -171,14 +171,6 @@ export default function ConatctPage() {
             </form>
           </div>
         </div>
-        <div className=" w-full h-6">
-          <div className=" w-3xl mx-auto  h-full "></div>
-        </div>
-        <div className="py-10"> 
-            <Footer/>
-        </div>
-        
       </div>
-    </div>
   );
 }

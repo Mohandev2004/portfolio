@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mohan-a.me
+
+# Sitemaps
+Sitemap: https://mohan-a.me/sitemap.xml
