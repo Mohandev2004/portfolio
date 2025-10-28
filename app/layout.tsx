@@ -13,7 +13,50 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Mohan | Full-Stack Software Developer",
   description:
-    "A perfect portfolio website template that showcases your skills, with minimal and smooth microinteractions — perfect for developers and designers.",
+    "Explore Mohan’s portfolio to see his projects and journey in tech — showcasing expertise in React, Next.js, Node.js, and modern web development.",
+    keywords: [
+    "Mohan A",
+    "Mohan Portfolio",
+    "Full Stack Developer",
+    "Software Engineer",
+    "Web Developer",
+    "React Developer",
+    "Next.js Developer",
+    "JavaScript",
+    "Open Source",
+  ],
+  icons: {
+    icon: "/mohan.png",
+    shortcut: "/mohan.png",
+    apple: "/mohan.png",
+  },
+  authors: [{ name: "Mohan" }],
+  creator: "Mohan",
+  openGraph: {
+    title: "Mohan | Developer Portfolio",
+    description:
+      "Explore Mohan’s portfolio to see his projects and journey in tech — showcasing expertise in React, Next.js, Node.js, and modern web development.",
+    url: "https://mohan-a.me",
+    siteName: "Mohan Portfolio",
+    type: "website",
+
+    images: [
+      {
+        url: "https://www.mohan-a.me/mohan.png",
+        width: 1100,
+        height: 565,
+        alt: "Mohan Developer Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mohan | Full-Stack Software Developer",
+    description:
+      "Explore Mohan’s portfolio to see his projects and journey in tech.",
+    images: ["https://www.mohan-a.me/mohan.png"],
+  
+  }
 };
 
 export default function RootLayout({

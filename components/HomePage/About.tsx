@@ -25,7 +25,7 @@ export default function Main() {
 
           <div className="flex flex-col items-center mt-10 lg:mt-0">
               <Image
-                src="/image.png"
+                src="/me.png"
                 alt="Avatar"
                 width={500}
                 height={500}
