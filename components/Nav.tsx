@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   const navItems = [
     { title: "About", href: "/about" },
-    { title: "Projects", href: "/projects" },
+    { title: "Projects", href: "/Projects" },
     { title: "Blog", href: "/blog" },
     { title: "Contact", href: "/contact" },
   ];
