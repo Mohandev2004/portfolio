@@ -11,10 +11,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mohan | Full-Stack Software Developer",
+  metadataBase: new URL("https://mohan-a.me"),
+  title: {
+    default: "Mohan | Full-Stack Software Developer",
+    template: "%s | Mohan",
+  },
   description:
     "Explore Mohan’s portfolio to see his projects and journey in tech — showcasing expertise in React, Next.js, Node.js, and modern web development.",
-    keywords: [
+  keywords: [
     "Mohan A",
     "Mohan Portfolio",
     "Full Stack Developer",
@@ -30,7 +34,7 @@ export const metadata: Metadata = {
     shortcut: "/mohan.png",
     apple: "/mohan.png",
   },
-  authors: [{ name: "Mohan" }],
+  authors: [{ name: "Mohan", url: "https://mohan-a.me" }],
   creator: "Mohan",
   openGraph: {
     title: "Mohan | Developer Portfolio",
@@ -39,10 +43,9 @@ export const metadata: Metadata = {
     url: "https://mohan-a.me",
     siteName: "Mohan Portfolio",
     type: "website",
-
     images: [
       {
-        url: "https://www.mohan-a.me/mohan.png",
+        url: "/mohan.png",
         width: 1100,
         height: 565,
         alt: "Mohan Developer Portfolio",
@@ -54,10 +57,11 @@ export const metadata: Metadata = {
     title: "Mohan | Full-Stack Software Developer",
     description:
       "Explore Mohan’s portfolio to see his projects and journey in tech.",
-    images: ["https://www.mohan-a.me/mohan.png"],
-  
-  }
+    images: ["/mohan.png"],
+    creator: "@your_twitter_handle",
+  },
 };
+
 
 export default function RootLayout({
   children,
